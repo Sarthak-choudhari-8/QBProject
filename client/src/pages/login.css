@@ -8,7 +8,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: "Fredoka", sans-serif;
+/* font-family: "Fredoka", sans-serif; */
 /* font-family: 'Open Sans', sans-serif !important; */
 
 }
@@ -17,7 +17,11 @@ font-family: "Fredoka", sans-serif;
 
 body{
   
-    /* background-color:#f7d045 ; */
+    /* background-color:#6edad6 ; */
+    background-color: rgb(165, 253, 180);
+    /* background-color: rgb(167, 247, 143); */
+    /* overflow-x: hidden; */
+
 
 
 }
@@ -69,7 +73,8 @@ body{
     padding: 50px 35px;
 }
 .login-form *{
-    
+    font-family: "Fredoka", sans-serif;
+
     color: #ffffff;
     letter-spacing: 0.5px;
     outline: none;

@@ -26,7 +26,10 @@ const SemesterSchema = new Schema({
     semester:{type:String,required:true},
 
     SoftwareQualityAssurance:[QuestionSchema],
-    AdvanceDataScience:[QuestionSchema]
+    AdvanceDataScience:[QuestionSchema],
+    MachineLearning:[QuestionSchema],
+    AdvanceJava_sem6:[QuestionSchema],
+    DataWarehouse:[QuestionSchema],
 
 });
 

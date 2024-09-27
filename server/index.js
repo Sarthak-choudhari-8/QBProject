@@ -20,6 +20,7 @@ app.use(express.json());
 app.use(cors(corsOption));
 
 const MongoURL = "mongodb://127.0.0.1:27017/QBProject";
+const DBURL = "mongodb+srv://sarthakchaudhari888:ETa3lafvpb9iVndM@cluster0.qmubn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 main().then(() => {
     console.log("connected to DB");
@@ -29,7 +30,7 @@ main().then(() => {
     })
 
 async function main() {
-    await mongoose.connect(MongoURL)
+    await mongoose.connect(DBURL)
 }
 
 
@@ -85,7 +86,7 @@ app.post("/GetQuestions", async (req, res, next) => {
             }
             questions = result[subjectName];
             if (marksValue != 0) { questions = questions.filter(question => question.mark == marksValue); }
-            return res.json({ status: true,msg:"No Questions found " , questions });
+            return res.json({ status: true , msg:"No Questions found " , questions });
         }
         /////////////////
         if (semester == '5') {
@@ -101,6 +102,12 @@ app.post("/GetQuestions", async (req, res, next) => {
             else if (subject == "Android Programming") {
                 getQuestions5("AndroidProgramming", mark);
             }
+            else if (subject == "Advance Java") {
+                getQuestions5("AdvanceJava", mark);
+            }
+            else if (subject == "Data Mining") {
+                getQuestions5("DataMining", mark);
+            }
         }
 
         else if (semester == '6') {
@@ -110,7 +117,18 @@ app.post("/GetQuestions", async (req, res, next) => {
             else if (subject == 'Advance Data Science') {
                 getQuestions6("AdvanceDataScience", mark);
             }
+            else if (subject == 'Machine Learning') {
+                getQuestions6("MachineLearning", mark);
+            }
+            else if (subject == 'Advance Java') {
+                getQuestions6("AdvanceJava_sem6", mark);
+            }
+            else if (subject == 'Data Warehouse') {
+                getQuestions6("DataWarehouse", mark);
+            }
+
         }
+       
         
         else{
         return res.json({ status: false , msg:"Please re check your options !"});
@@ -130,7 +148,7 @@ app.listen(5000, () => {
 
 app.use((err, req, res, next) => {
     let { status = 500, message = "default error" } = err;
-    console.log(err);
+    // console.log(err);
     // res.status(status).render("listings/error.ejs" , {err});
     res.send(err);
 })

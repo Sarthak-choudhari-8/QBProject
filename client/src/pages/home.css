@@ -3,10 +3,12 @@
 
 *{
  
-    font-family: "Fredoka", sans-serif;
+    /* font-family: "Fredoka", sans-serif; */
     /* font-family: 'Open Sans', sans-serif !important; */
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
 
-  
+
 }
 
 
@@ -59,11 +61,15 @@ justify-content: center;
     height: 100%;
     width: 35%;
     /* border: 2px solid black; */
-    font-size: 2.75rem;
+    color: rgb(19, 116, 116);
+     /* color: #80C4D6; */
+    font-size: 3rem;
     font-weight: 500;
     display: flex;
     align-items: center;
     margin-left: 10px;
+    font-family: "Fredoka", sans-serif;
+
 
 }
 .nav-heading-logo{
@@ -87,17 +93,19 @@ justify-content: center;
 
 }
 .nav-links a{
+  font-family: "Fredoka", sans-serif;
+
     text-decoration: none;
-    color: black;
+    color: #f10e0e;
 font-size: 1.5rem;
-font-weight: 500;
+font-weight: 400;
     transition-property: all;
     transition-duration: 0.15s;
     transition-timing-function: ease-in;
 }
 
 .nav-links a:hover {
-    color: #f1690e;
+    color: black;
     /* transform: scale(1.1); */
     font-weight: 500;
 
@@ -124,8 +132,10 @@ font-weight: 500;
   width: 350px;
   position: absolute;
   border-radius: 50%;
+
 }
 .home-shape1{
+  /* opacity: 0.9; */
   background: linear-gradient(
       #fc5b3b,
       #eb9d30
@@ -133,7 +143,9 @@ font-weight: 500;
   left: -480px;
   top: -80px;
 }
-.home-shape2{
+.home-shape2{  
+  /* opacity: 0.87; */
+
   background: linear-gradient(
       to right,
     
@@ -162,6 +174,8 @@ font-weight: 500;
 
 
 .select-select {
+  font-family: "Fredoka", sans-serif;
+
  height: 40px;
   width: 12rem;
   padding: 5px 5px 5px 8px;
@@ -189,6 +203,7 @@ font-weight: 600;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  font-family: "Fredoka", sans-serif;
 
 }
 
@@ -210,6 +225,8 @@ font-weight: 600;
   /* backdrop-filter: blur(10px); */
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    font-family: "Fredoka", sans-serif;
+
 }
 
 .search-form-button:hover{
@@ -256,10 +273,12 @@ font-size: 1.4rem;
 height: auto;
 /* border: 1px solid rgb(230, 23, 23); */
 padding-left: 10px ;
+font-family: "Fredoka", sans-serif;
+
 
 }
 .question-text p i{
-  font-family: 'Open Sans', sans-serif !important;
+  /* font-family: 'Open Sans', sans-serif !important; */
 
   color: black;
   margin-right: 10px;
@@ -275,6 +294,8 @@ width: 7%;
 /* border: 1px solid black; */
 display: flex;
     justify-content: center;
+    font-family: "Fredoka", sans-serif;
+
 }
 .question-imp{
   font-weight: 530;
@@ -284,8 +305,13 @@ font-size: 1.4rem;
     display: flex;
     justify-content: center;
     margin-right: -15px;
-    color: #fb6f6f
+    color: #fc3131
 }
+/* .arrowIcon{
+
+
+} */
+
 
 .impIcon{
   font-size: 1.2 rem;

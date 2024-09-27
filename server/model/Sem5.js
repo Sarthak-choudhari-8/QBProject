@@ -29,6 +29,8 @@ const SemesterSchema = new Schema({
     DataScience:[QuestionSchema],
     ArtificialIntelligence:[QuestionSchema],
     AndroidProgramming:[QuestionSchema],
+    AdvanceJava:[QuestionSchema],
+    DataMining:[QuestionSchema],
 });
 
 

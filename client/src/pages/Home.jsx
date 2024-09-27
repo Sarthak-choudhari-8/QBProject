@@ -26,7 +26,7 @@ let [filteredQuestions, setFilteredQuestions] = useState([]);
         3: ["Math 201", "Computer Science 101", "Statistics 101"],
         4: ["Math 202", "Computer Science 102", "History 101"],
         5: ["Artificial Intelligence", "Advance Java", "Data Mining", "Data Science", "Software Engineering", "Android Programming",],
-        6: ["Artifical Intelligence 2", "Advance Java2", "Data mining 2", "Advance Data Science", "Software Quality Assurance", "Android programming 2",],
+        6: ["Machine Learning", "Advance Java", "Data Warehouse", "Advance Data Science", "Software Quality Assurance",],
 
     };
 
@@ -63,11 +63,11 @@ let [filteredQuestions, setFilteredQuestions] = useState([]);
 
         let { semester, subject, topic, mark } = selctedValues;
         event.preventDefault();
+
        let  { data } = await axios.post(GetQuestionRoute, {
             semester, subject, topic, mark
         });
 
-       
 
 setMsg1(data.msg)
 
@@ -103,7 +103,7 @@ setMsg1(data.msg)
 
         <>
 
-        <div className="home-background">
+        <div className="home-background" id="home-background">
 <div className="home-shape1 home-shapes"></div>
         <div className="home-shape2 home-shapes"></div>
     </div>
@@ -111,7 +111,7 @@ setMsg1(data.msg)
                 <div className="nav-logo"></div>
                 <div className="nav-heading">Question Bank <div className="nav-heading-logo"></div></div>
                 <div className="nav-links">
-                <a href="/home">Home</a>
+                <a href="#home-background">Home</a>
                 <a href="/Admin">Admin</a>
                 <a href="/feedback">Feedback</a>
                 <a href="#"> About Us</a>
@@ -133,12 +133,12 @@ setMsg1(data.msg)
                         handleChange(event);
                     }} required >
                         <option className="select-option" value=""> Select Semester</option>
-                        <option className="select-option" value="1">Semester I</option>
-                        <option className="select-option" value="2">Semester II</option>
-                        <option className="select-option" value="3">Semester III</option>
-                        <option  className="select-option" value="4">Semester IV</option>
-                        <option className="select-option" value="5">Semester V</option>
-                        <option className="select-option" value="6">Semester VI</option>
+                        <option className="select-option" value="1">Semester 1</option>
+                        <option className="select-option" value="2">Semester 2</option>
+                        <option className="select-option" value="3">Semester 3</option>
+                        <option  className="select-option" value="4">Semester 4</option>
+                        <option className="select-option" value="5">Semester 5</option>
+                        <option className="select-option" value="6">Semester 6</option>
                     </select>
 
 

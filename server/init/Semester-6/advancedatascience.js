@@ -1,0 +1,60 @@
+let probabilityQuestions = [
+    // Unit 1: Introduction to Probability
+    { text: "What is probability theory, and why is it important?", mark: 10, imp: true },
+    { text: "Explain the basic terminology used in probability theory.", mark: 10, imp: true },
+    { text: "What are the axioms of probability?", mark: 10, imp: true },
+    { text: "How can simple probability rules be applied in real-world scenarios?", mark: 10, imp: true },
+    { text: "What is Association Rule Learning?", mark: 5, imp: false },
+    { text: "State and explain Bayes Theorem with an example.", mark: 10, imp: true },
+    { text: "What is a random variable in probability?", mark: 10, imp: true },
+    { text: "Define Probability Density Function (PDF) and Cumulative Distribution Function (CDF).", mark: 10, imp: true },
+    { text: "What is a binomial distribution, and where is it used?", mark: 5, imp: true },
+    { text: "Describe the Poisson distribution and its applications.", mark: 5, imp: true },
+    { text: "What is the geometric distribution, and when is it applicable?", mark: 5, imp: false },
+    { text: "What are the key parameters of continuous distributions?", mark: 10, imp: true },
+    { text: "Explain the uniform distribution and its significance.", mark: 5, imp: true },
+    { text: "What is the exponential distribution used for?", mark: 5, imp: true },
+    { text: "Describe the characteristics and applications of the chi-square distribution.", mark: 5, imp: false },
+    { text: "What is Student’s t-distribution and when is it used?", mark: 5, imp: false },
+    { text: "Explain the F-distribution and its application in statistics.", mark: 5, imp: false },
+
+    // Unit 2: Sampling and Estimation
+    { text: "What is sampling, and why is it important in statistics?", mark: 10, imp: true },
+    { text: "Differentiate between population parameters and sample statistics.", mark: 5, imp: true },
+    { text: "What is probabilistic sampling, and how does it differ from non-probability sampling?", mark: 10, imp: true },
+    { text: "Describe the concept of a sampling distribution.", mark: 10, imp: true },
+    { text: "Explain the Central Limit Theorem (CLT) and its significance.", mark: 10, imp: true },
+    { text: "How do you estimate the sample size for the mean of a population?", mark: 5, imp: true },
+    { text: "What is the method of moments, and how is it used to estimate population parameters?", mark: 5, imp: false },
+    { text: "Explain the Maximum Likelihood Estimation (MLE) technique.", mark: 10, imp: true },
+    { text: "How are population parameters estimated using MLE?", mark: 5, imp: true },
+
+    // Unit 3: Simple Linear Regression
+    { text: "What is simple linear regression, and how is it used in predictive modeling?", mark: 10, imp: true },
+    { text: "Discuss the history of regression and Francis Galton's regression model.", mark: 5, imp: false },
+    { text: "How do you build a simple linear regression model?", mark: 10, imp: true },
+    { text: "Explain how to estimate parameters using the Ordinary Least Squares (OLS) method.", mark: 10, imp: true },
+    { text: "How do you interpret the coefficients of a simple linear regression model?", mark: 10, imp: true },
+    { text: "Describe how to validate a simple linear regression model.", mark: 5, imp: true },
+    { text: "What is outlier analysis, and why is it important in regression models?", mark: 5, imp: false },
+    { text: "Explain how to compute confidence intervals for regression coefficients.", mark: 5, imp: true },
+    { text: "What is the confidence interval for the expected value of Y for a given X?", mark: 5, imp: false },
+    { text: "Describe the prediction interval for the value of Y for a given X.", mark: 5, imp: true },
+
+    // Unit 4: Logistic Regression
+    { text: "What are classification problems, and how does logistic regression help solve them?", mark: 10, imp: true },
+    { text: "What is binary logistic regression?", mark: 10, imp: true },
+    { text: "How are parameters estimated in logistic regression?", mark: 10, imp: true },
+    { text: "Explain how to interpret the parameters of a logistic regression model.", mark: 10, imp: true },
+    { text: "Describe the logistic regression model and its key features.", mark: 5, imp: true },
+    { text: "What are classification diagnostics, and why are they important in logistic regression?", mark: 5, imp: false },
+    { text: "What is a classification table in logistic regression?", mark: 5, imp: false },
+    { text: "Explain sensitivity and specificity in logistic regression.", mark: 5, imp: false },
+    { text: "What is the optimal cut-off probability in logistic regression?", mark: 5, imp: false },
+    { text: "How is variable selection performed in logistic regression?", mark: 5, imp: false },
+    { text: "Describe the application of logistic regression in credit rating.", mark: 5, imp: false },
+    { text: "What is a gain chart, and how is it used in logistic regression?", mark: 5, imp: true },
+    { text: "Explain the purpose of a lift chart in logistic regression.", mark: 5, imp: true },
+];
+
+module.exports = probabilityQuestions;

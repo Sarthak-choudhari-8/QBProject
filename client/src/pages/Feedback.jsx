@@ -40,7 +40,8 @@ export default function Feedback(){
 
 // console.log(data.status);
 
-            console.log(feedbackValues);
+            // console.log(feedbackValues);
+            Navigate("/home");
         }
 
 
@@ -66,7 +67,7 @@ export default function Feedback(){
 <input className="feedback-input" placeholder="Enter email / phone" name="email_phone" id="email_phone" onChange={(e)=>handleChange(e)} />
 
 <label htmlFor="message" className="feedback-label">Feedback</label>
-<textarea className="feedback-textarea" placeholder="You can also Suggest us Some Questions " name="message" id="message" onChange={(e)=>handleChange(e)} />
+<textarea className="feedback-textarea" placeholder="You can also Suggest us Some Questions , (write semester + subject of question)" name="message" id="message" onChange={(e)=>handleChange(e)} />
 
 <button className="feedback-button" type="submit">Submit</button>
 
