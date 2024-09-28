@@ -3,7 +3,7 @@ import axios from 'axios'
 import { feedbackRoute } from "../utility/APIRoute"
 
 import { useNavigate } from "react-router-dom";
-import "../pages/feedback.css"
+import "../UI_Design/feedback.css"
 
 
 export default function Feedback(){

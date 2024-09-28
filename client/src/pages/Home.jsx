@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import QContainer from "../components/QContainer";
-import "../pages/home.css"
+import "../UI_Design/home.css"
 import { GetQuestionRoute } from "../utility/APIRoute";
 import axios from "axios";
 
