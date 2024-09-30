@@ -111,7 +111,7 @@ left: 60px;
 }
 
 .feedback-textarea{
-    font-size: 1rem;
+    font-size: 1rem !important;
 
     display: block;
     height: 100px;
@@ -126,6 +126,7 @@ left: 60px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
     border: 1px solid black;
+
 
 }
 
