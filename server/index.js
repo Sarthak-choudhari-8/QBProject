@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
 const Feedback = require("./model/Feedback");
+const Subject=  require("./model/Subject.js");
 
 const Semester5 = require("./model/Sem5.js");
 const Semester6 = require("./model/Sem6.js");
@@ -30,7 +31,7 @@ main().then(() => {
     })
 
 async function main() {
-    await mongoose.connect(DBURL)
+    await mongoose.connect(MongoURL)
 }
 
 
@@ -138,6 +139,18 @@ app.post("/GetQuestions", async (req, res, next) => {
         next(er)
     }
 
+})
+
+app.get("/set",async(req,res)=>{
+
+    let subName = "Software Engineering";
+
+    await Subject.updateOne(
+        {},  // Empty filter to update the first document found
+        { $push: { subjects: subName } }  // $push adds 'physics' to the subjects array
+    )
+ 
+   res.send("success");
 })
 
 

@@ -1,0 +1,255 @@
+/* #f7d045 yell ,  #fa7541 orang  , #5a72fa blue */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto&display=swap');
+
+*,
+*:before,
+*:after{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+/* font-family: "Fredoka", sans-serif; */
+/* font-family: 'Open Sans', sans-serif !important; */
+/* overflow-x: hidden; */
+}
+
+
+
+body{
+  
+    /* background-color:#6edad6 ; */
+    background-color: rgb(165, 253, 180);
+    /* background-color: rgb(167, 247, 143); */
+    /* overflow-x: hidden; */
+
+
+
+}
+
+.DS-site-warn{
+    visibility: hidden;
+  }
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #ff512f,
+        #f09819
+    );
+    left: -180px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+      
+        #1845ad,
+        #23a2f6
+    );
+    right: -150px;
+    bottom: 120px;
+}
+.admin-form{
+    height: 300px;
+    width: 90%;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+
+    transform: translate(-50%,-50%);
+    top: 200px;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.admin-form *{
+    font-family: "Fredoka", sans-serif;
+
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+}
+.admin-form h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+color: #080710;
+}
+
+.form-label{
+    display: block;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #363332;
+}
+
+.admin-form-heading{
+    /* border: 2px solid yellow; */
+    height: 50px;
+    width: 100%;
+}
+.admin-inp1{
+    /* border: 2px solid red; */
+    width: 40%;
+}
+
+.admin-inp2{
+    width: 40%;
+    /* border: 2px solid black; */
+}
+
+
+.admin-input{
+    /* display: block; */
+    height: 50px;
+    width: 90%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #363332;
+    border-bottom: 1px solid black;
+}
+::placeholder{
+    color: #363332;
+}
+
+
+
+.admin-button{
+    margin-top: 45px;
+    width: 10%;
+    height: 40px;
+    background-color: #fa7541;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+}
+
+  .admin-button:hover{
+    scale: 1.1;
+    background-color: #ff512f ;
+
+   }
+   /* #f7d045 yell ,  #fa7541 orange  , #5a72fa blue */
+
+
+   .admin-heading-Msg{
+    position: absolute;
+    top:370px;
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    /* font-weight: 600; */
+    font-family: "Fredoka", sans-serif; 
+    color: rgba(245, 67, 23, 0.911);
+}
+
+
+
+.admin-container{
+
+
+    border: 2px solid red;
+    position: absolute;
+    margin-left: 12.5%;
+    top: 400px;
+    width: 75%;
+    height: 100px;
+   
+    
+border-radius: 10px;
+backdrop-filter: blur(10px);
+border: 2px solid rgba(255,255,255,0.1);
+box-shadow: 0 0 40px rgba(8,7,16,0.6);
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
+}
+
+
+
+.admin-container button{
+
+    font-family: "Fredoka", sans-serif;
+    width: 25%;
+    height: 40px;
+    background-color: #fa7541;
+    color: #080710;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in;
+
+
+}
+
+.admin-container button:hover{
+scale: 1.05;
+background-color: #ff512f ;
+}
+
+
+   @media (max-width :466px) {
+    *{
+      visibility: hidden;
+    }
+    
+          .DS-site-warn{
+            visibility: visible !important;
+            display:flex  !important; 
+            justify-content: center  !important;
+            align-items: center  !important;
+            border: 2px solid black  !important;
+      
+          width: 90% !important;
+          position: absolute;
+       
+          right: 25px;
+          height: 70px !important;
+
+          top: 300px;
+          font-size: 2rem ;
+            font-family: "Fredoka", sans-serif;
+          ;
+          }
+    
+      }
+    

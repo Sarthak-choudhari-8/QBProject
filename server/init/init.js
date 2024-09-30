@@ -17,7 +17,7 @@ const SQA_6 = require("./Semester-6/software_q_ashorrence.js");
 
 
 /////
-const MongUrl = "mongodb://127.0.0.1:27017/QBProject";
+const MongoUrl = "mongodb://127.0.0.1:27017/QBProject";
 const DBURL = "mongodb+srv://sarthakchaudhari888:ETa3lafvpb9iVndM@cluster0.qmubn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 
@@ -32,7 +32,7 @@ main().then(() => {
 
 
 async function main() {
-  await mongoose.connect(DBURL);
+  await mongoose.connect(MongoUrl);
 }
 
 ///////////////////////////

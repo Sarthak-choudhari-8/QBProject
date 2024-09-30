@@ -1,13 +1,25 @@
+import Select from "react-select";
 
 import { useState, useEffect } from "react";
 import QContainer from "../components/QContainer";
-import "../pages/home.css"
+import "../UI_Design/home.css"
+
 import { GetQuestionRoute } from "../utility/APIRoute";
 import axios from "axios";
 
-export default function Home() {
 
-    let [Msg1 , setMsg1] = useState("Search for Questions . . .");
+
+
+
+
+
+
+export default function Home() {
+  
+   
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    let [Msg1 , setMsg1] = useState("Search for Questions ");
     let [selctedValues, setSelectedValues] = useState({
         semester: "",
         subject: "",
@@ -18,7 +30,12 @@ export default function Home() {
 
 let  [Questions , setQuestions] = useState([])
 let [filteredQuestions, setFilteredQuestions] = useState([]);
+let [subjectList , setSubjectList] = useState(["Artificial Intelligence", "Advance Java", "Data Mining", "Data Science", "Software Engineering", "Android Programming"])
 
+const options2 = subjectList.map(sub=>
+    ({value:sub,label:sub})
+    );
+      
 
     const subjects = {
         1: ["math 101", "Physics 101", "Chemistry 101"],
@@ -29,6 +46,10 @@ let [filteredQuestions, setFilteredQuestions] = useState([]);
         6: ["Machine Learning", "Advance Java", "Data Warehouse", "Advance Data Science", "Software Quality Assurance",],
 
     };
+
+    const handleChange2 = (option) => {
+        setSelectedOption(option);  // Update the selected option
+      };
 
     function updateSubjects() {
         const semesterSelect = document.getElementById("semester");
@@ -102,7 +123,7 @@ setMsg1(data.msg)
     return (
 
         <>
-
+        <div className="DS-site-warn"> Switch To Desktop Site</div>
         <div className="home-background" id="home-background">
 <div className="home-shape1 home-shapes"></div>
         <div className="home-shape2 home-shapes"></div>
@@ -111,7 +132,7 @@ setMsg1(data.msg)
                 <div className="nav-logo"></div>
                 <div className="nav-heading">Question Bank <div className="nav-heading-logo"></div></div>
                 <div className="nav-links">
-                <a href="#home-background">Home</a>
+                <a href="/home#home-background">Home</a>
                 <a href="/Admin">Admin</a>
                 <a href="/feedback">Feedback</a>
                 <a href="#"> About Us</a>
@@ -126,7 +147,17 @@ setMsg1(data.msg)
             <div className="SearchForm">
 
                 <form onSubmit={(event) => handleSubmit(event)} >
-              
+               
+                <Select
+        value={selectedOption}  // Pass the currently selected option
+        onChange={handleChange2}  // Handle the change event
+        options={options2} 
+        //  options={options}
+        isSearchable={true}  // Enable search functionality
+        placeholder="Select a subject"
+        isClearable={true} 
+        // className="select-select"
+      />
 
                     <select className="select-select" value={selctedValues.semester} id="semester" name="semester" onChange={(event) => {
                         updateSubjects();
@@ -175,7 +206,7 @@ setMsg1(data.msg)
 
             {(() => {
       if (filteredQuestions.length == 0 ) {
-        return <div className="heading-Msg">{Msg1}</div>
+        return <div className="heading-Msg">{Msg1} <i className="fa-solid fa-magnifying-glass"></i></div>
       } 
     
       else {
@@ -184,7 +215,6 @@ setMsg1(data.msg)
     })()}
                     
            
-
 
         </>
     )

@@ -3,7 +3,7 @@ import axios from 'axios'
 import { feedbackRoute } from "../utility/APIRoute"
 
 import { useNavigate } from "react-router-dom";
-import "../pages/feedback.css"
+import "../UI_Design/feedback.css"
 
 
 export default function Feedback(){
@@ -49,7 +49,7 @@ export default function Feedback(){
     
     <>
     
- <div className="feedbackForm">
+    <div className="DS-site-warn"> Switch To Desktop Site</div>
 
  <div className="background">
         <div className="shape"></div>
@@ -76,8 +76,8 @@ export default function Feedback(){
 
 
 
- </div>
-    
+ 
+ 
     </>
     )
     

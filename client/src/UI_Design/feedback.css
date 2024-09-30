@@ -9,11 +9,13 @@ margin: 0;
 box-sizing: border-box;
 /* font-family: "Fredoka", sans-serif; */
 /* font-family: 'Open Sans', sans-serif !important; */
-
+/* overflow-x: hidden; */
 }
 
 
-
+.DS-site-warn{
+    visibility: hidden;
+  }
 
 .background{
     width: 430px;
@@ -149,3 +151,27 @@ left: 60px;
 
    }
    /* #f7d045 yell ,  #fa7541 orange  , #5a72fa blue */
+   @media (max-width :466px) {
+    *{
+      visibility: hidden;
+    }
+    
+          .DS-site-warn{
+            visibility: visible !important;
+            display:flex  !important; 
+            justify-content: center  !important;
+            align-items: center  !important;
+            border: 2px solid black  !important;
+          width: 90% !important;
+          position: absolute;
+          right: 25px;
+          height: 70px !important;
+
+          top: 300px;
+          font-size: 2rem ;
+            font-family: "Fredoka", sans-serif;
+          ;
+          }
+    
+      }
+    

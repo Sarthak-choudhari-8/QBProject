@@ -11,7 +11,9 @@
 
 }
 
-
+.DS-site-warn{
+  visibility: hidden;
+}
 
 .Navbar{
   margin-top: 25px;
@@ -243,7 +245,6 @@ font-weight: 600;
 
  /*  */
 .Container{
-    /* border: 2px solid red; */
     height :auto;
     width: 100%;
     margin-top: 50px;
@@ -262,7 +263,6 @@ border-radius: 20px;
   border: 2px solid rgba(255,255,255,0.1);
   box-shadow: 0 0 5px rgba(8,7,16,0.6);
      /* box-shadow: 0 0 5px rgba(62, 49, 155, 0.6);  */
-
 }
 
 .question-text{
@@ -327,7 +327,6 @@ font-size: 1.4rem;
     width: 100%;
     display: flex;
     align-items: center;
-    /* border: 1px solid black; */
     margin-bottom: 20px;
     
     }
@@ -339,6 +338,9 @@ font-size: 1.4rem;
     /* border: 1px solid rgb(230, 23, 23); */
     display: flex;
     justify-content: center;
+    font-family: "Fredoka", sans-serif; 
+  
+
     
     }
     .heading-mark{
@@ -348,6 +350,8 @@ font-size: 1.4rem;
     /* border: 1px solid black; */
     display: flex;
     justify-content: center;
+    border-left: 3px solid black;
+
     }
 
     .heading-imp{
@@ -357,6 +361,9 @@ font-size: 1.4rem;
         width: 10%;
         display: flex;
     justify-content: center;
+    border-left: 3px solid black;
+   
+
     }
 
     .heading-Msg{
@@ -368,8 +375,48 @@ font-size: 1.4rem;
         justify-content: center;
         font-size: 2rem;
         font-weight: 600;
+        font-family: "Fredoka", sans-serif; 
     }
+
+.heading-Msg i{
+  
+  color: black;
+  font-size: 1.5rem;
+  margin-left: 15px;
+  margin-top: 7px;
+
+}
 
     /*  */
 
-   
+    @media (max-width :466px) {
+*{
+  visibility: hidden;
+}
+
+      .DS-site-warn{
+        visibility: visible !important;
+        display:flex  !important; 
+        justify-content: center  !important;
+        align-items: center  !important;
+        border: 2px solid black  !important;
+      height: 100px !important;
+      width: 90% !important;
+      position: absolute;
+      right: -25px;
+      top: 300px;
+      font-size: 2rem ;
+      font-family: "Fredoka", sans-serif;
+      
+      }
+
+  }
+
+  /*  */
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+
+
+
+  }
