@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto&display=swap');
+
+
+.DS-site-warn{
+    visibility: hidden;
+  }
+.container{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 150px;
+}
+
+
+
+.about-heading{
+    font-family: "Fredoka", sans-serif;
+    height: 100px;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 550;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 275px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 10px rgba(8,7,16,0.6);
+
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+   
+}
+
+.box:hover{
+    
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 50px rgba(8, 7, 16, 0.89);
+    
+   
+}
+
+.reverse-box{
+    flex-direction: row-reverse;
+}
+
+.box1{
+    /* border: 1px solid black; */
+    height: 95%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-photo {
+ 
+   margin: 5px;
+   margin-left: 8%; 
+   height: 80%;
+   width: 80%;
+   border-radius: 50%;
+   /* backdrop-filter: blur(10px); */
+  /* border: 2px solid rgba(255,255,255,0.1); */
+   box-shadow: 0 0 10px rgba(8,7,16,0.6);}
+
+
+.s-photo{
+    background-image: url(../assets/sarthak.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.p-photo{
+    background-image: url(../assets/pramod.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.t-photo{
+    background-image: url(../assets/tamas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.y-photo{
+    background-image: url(../assets/yash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+.box2 {
+    height: 95%;
+    width: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ }
+ .box2-text h2{
+    font-size: 2rem;
+    word-spacing: 10px;
+    font-weight: 100px;
+    font-family: "Fredoka", sans-serif;
+
+    
+ }
+.box2-text p{
+    position: relative;
+    top: 25px;
+    font-family: "Fredoka", sans-serif;
+font-size: 1.5rem;
+}
+
+
+ .box2-text{
+    margin-top: 25px;
+    height: 60%;
+    /* border: 1px solid black; */
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+.box2-social {
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+} 
+
+.img1 {
+    
+    height: 75px;
+    width: 75px;
+        background-image: url(../assets/insta.jpg);
+
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid black; */
+}
+
+.img2{
+    height: 75px;
+    width: 75px;
+    background-image: url(../assets/linkedin.jpg);
+
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid black; */
+}
+
+
+
+
+
+
+

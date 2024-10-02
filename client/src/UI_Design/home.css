@@ -11,6 +11,8 @@
 
 }
 
+
+
 .DS-site-warn{
   visibility: hidden;
 }
@@ -116,7 +118,7 @@ font-weight: 400;
 .nav-links a:focus {
     color: #f1690e;
     /* transform: scale(1.2); */
-    font-weight: 900;
+    font-weight: 400;
 
 }
 

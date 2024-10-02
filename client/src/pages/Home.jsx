@@ -25,7 +25,7 @@ export default function Home() {
         course: "",
         year: "",
         semester: "",
-        topic:"",
+        topic: "",
         subject: "",
         mark: "",
 
@@ -41,10 +41,10 @@ export default function Home() {
         const fetchData = async () => {
             try {
                 const { data } = await axios.get(GetSubjectsRoute);
-            
-                    const names = data.data.map(subject => subject.name);
-                    setSubjectList(names);
-                
+
+                const names = data.data.map(subject => subject.name);
+                setSubjectList(names);
+
             } catch (error) {
                 console.error("Error fetching subjects:", error); // Handle any errors
             }
@@ -81,15 +81,15 @@ export default function Home() {
         event.preventDefault();
         let { curriculum, course, year, semester, topic, subject, mark } = selctedValues;
 
-        let { data} = await axios.post(GetQuestionRoute, {
-            curriculum, course, year, semester, subject, mark   
-             });
+        let { data } = await axios.post(GetQuestionRoute, {
+            curriculum, course, year, semester, subject, mark
+        });
 
 
         //    console.log(data); 
 
         setMsg1(data.msg)
-        
+
 
 
         const questionsData = data.questions.map((q) => ({
@@ -126,6 +126,8 @@ export default function Home() {
                 <div className="home-shape1 home-shapes"></div>
                 <div className="home-shape2 home-shapes"></div>
             </div>
+
+
             <div className="Navbar sticky">
                 <div className="nav-logo"></div>
                 <div className="nav-heading">Question Bank <div className="nav-heading-logo"></div></div>
@@ -133,11 +135,8 @@ export default function Home() {
                     <a href="/home#home-background">Home</a>
                     <a href="/Admin">Admin</a>
                     <a href="/feedback">Feedback</a>
-                    <a href="#"> About Us</a>
+                    <a href="/about"> About Us</a>
                 </div>
-
-
-
             </div>
 
 
@@ -190,15 +189,15 @@ export default function Home() {
 
 
                     <Select
-                    value={selctedValues.subject} 
-                    onChange={handleChange2}  
-                    options={options}
-                    isSearchable={true}  
-                    placeholder="Select Subject"
-                    isClearable={true} 
-                    className="select-select-subject"
-                    required
-                />
+                        value={selctedValues.subject}
+                        onChange={handleChange2}
+                        options={options}
+                        isSearchable={true}
+                        placeholder="Select Subject"
+                        isClearable={true}
+                        className="select-select-subject"
+                        required
+                    />
 
                     <input className="select-select" value={selctedValues.topic} placeholder=" Include Keyword " name="topic" onChange={(event) => {
                         handleChange(event);

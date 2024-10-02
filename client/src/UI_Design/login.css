@@ -14,17 +14,14 @@ box-sizing: border-box;
 }
 
 
-
 body{
   
-    /* background-color:#6edad6 ; */
-    background-color: rgb(165, 253, 180);
-    /* background-color: rgb(167, 247, 143); */
-    /* overflow-x: hidden; */
 
+    /* background-color: white !important; */
+    background-color: rgb(121, 250, 177) !important;
+    
+  }
 
-
-}
 
 .DS-site-warn{
     visibility: hidden;
