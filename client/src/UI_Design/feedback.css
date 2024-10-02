@@ -17,7 +17,8 @@ box-sizing: border-box;
     visibility: hidden;
   }
 
-.background{
+
+  .shape-background{
     width: 430px;
     height: 520px;
     position: absolute;
@@ -25,30 +26,32 @@ box-sizing: border-box;
     left: 50%;
     top: 50%;
 }
-.background .shape{
+.shapes{
     height: 250px;
     width: 250px;
     position: absolute;
     border-radius: 50%;
 }
-.shape:first-child{
+.shape1{
     background: linear-gradient(
         #ff512f,
         #f09819
     );
-    left: -80px;
-    top: -80px;
+    left: -100px;
+    top: -100px;
 }
-.shape:last-child{
+.shape2{
     background: linear-gradient(
         to right,
       
         #1845ad,
         #23a2f6
     );
-    right: -130px;
+    right: -100px;
     bottom: -80px;
 }
+
+
 .feedback-form{
     height: 570px;
     width: 420px;
@@ -79,7 +82,7 @@ box-sizing: border-box;
 color: #080710;
 position: absolute;
 top: 20px;
-left: 60px;
+left: 80px;
 }
 
 .feedback-label{

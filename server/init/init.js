@@ -1,19 +1,9 @@
 const mongoose = require("mongoose");
-const Semester5 = require("../model/Sem5.js")
-const Semester6 = require("../model/Sem6.js")
+const CBCS = require("../model/CBCS")
 /////////////
-const AI_5 = require("./Semester-5//AI_sem5.js");
-const DataSci_5 = require("./Semester-5/DataScience_sem5.js");
-const Android_5 = require("./Semester-5/android_sem5.js");
-const AdvJava_5 = require("./Semester-5/AdvJava_sem5.js");
-const SoftEng_5 = require("./Semester-5/SoftEng_sem5.js");
-const DataM_5 = require("./Semester-5/DataMining_sem5.js");
+
 /////////
-const AdvDS_6 = require("./Semester-6/advancedatascience.js");
-const AdvJava_6 = require("./Semester-6/advancejava.js");
-const DataWare_6 = require("./Semester-6/datawarehoue.js");
-const ML_6 = require("./Semester-6/machin_laening.js");
-const SQA_6 = require("./Semester-6/software_q_ashorrence.js");
+
 
 
 /////
@@ -32,7 +22,7 @@ main().then(() => {
 
 
 async function main() {
-  await mongoose.connect(MongoUrl);
+  await mongoose.connect(DBURL);
 }
 
 ///////////////////////////
@@ -134,9 +124,6 @@ initDB_sem6 = async () => {
     { new: true, upsert: true }
   );
   
-
-
-
   console.log("insertion of Data successfull  for semester 6. . .")
 }
 

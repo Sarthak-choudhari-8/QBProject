@@ -38,9 +38,7 @@ export default function Feedback(){
 
 
 
-// console.log(data.status);
 
-            // console.log(feedbackValues);
             Navigate("/home");
         }
 
@@ -51,23 +49,25 @@ export default function Feedback(){
     
     <div className="DS-site-warn"> Switch To Desktop Site</div>
 
- <div className="background">
-        <div className="shape"></div>
-        <div className="shape"></div>
+    <div class="shape-background">
+        <div class="shapes shape1"></div>
+        <div class="shapes shape2"></div>
     </div>
+
+
 <form onSubmit={(e)=> handleSubmit(e)}  className="feedback-form">
 <h3>[  Feedback Form  ]</h3>
 
 
 <label htmlFor="Name" className="feedback-label">Name</label>
 
-<input className="feedback-input"  placeholder="Enter Name " name="Name" id="Name" onChange={(e)=>handleChange(e)} />
+<input className="feedback-input"  placeholder="Enter your Name " name="Name" id="Name" onChange={(e)=>handleChange(e)}  required/>
 
 <label htmlFor="email_phone" className="feedback-label">Email / Phone</label>
-<input className="feedback-input" placeholder="Enter email / phone" name="email_phone" id="email_phone" onChange={(e)=>handleChange(e)} />
+<input className="feedback-input" placeholder="Enter your email or phone" name="email_phone" id="email_phone" onChange={(e)=>handleChange(e)} required />
 
 <label htmlFor="message" className="feedback-label">Feedback</label>
-<textarea className="feedback-textarea" placeholder="You can also Suggest us Some Questions , (write semester + subject of question)" name="message" id="message" onChange={(e)=>handleChange(e)} />
+<textarea className="feedback-textarea" placeholder="You can also Suggest us Some Questions , ( write course + semester + subject of question)" name="message" id="message" onChange={(e)=>handleChange(e)} required/>
 
 <button className="feedback-button" type="submit">Submit</button>
 

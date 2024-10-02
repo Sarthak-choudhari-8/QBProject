@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Error</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+   
+
+<style>
+.Project {
+    /* border: 2px solid rgb(255, 0, 0); */
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.project-title {
+    position: relative;
+    top: 00px;
+    border: 2px solid black;
+    /* border: 2px solid rgb(255, 255, 255); */
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    height: 40px;
+    width: 200px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 800;
+    background-color: #ffffff;
+    color: #282629;
+    box-shadow: rgb(204, 219, 232) 5px 5px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.project-title:hover {
+    color: #da1e37;
+    transform: scale(1.1);
+    background-color: #fff;
+    box-shadow: rgb(204, 219, 232) 5px 5px 6px 1px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.project-boxes {
+    /* border : 2px solid red; */
+    height: 65%;
+    width: 87%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    position: relative;
+    bottom: 50px;
+}
+
+.error-title {
+    position: relative;
+    top: 50px;
+}
+
+.error-msg {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    font-size: 1.9rem;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+    <section class="Project">
+        <div class="project-title error-title" >
+            <p><%= err.name %></p>
+        </div>
+        <div class="empty-logn-div" style=" height: 5px; width: 100%;"></div>
+
+
+        <div class="project-boxes error-msg">
+            <%= err.message %>
+        </div>
+
+        
+
+
+    </section>
+
+        
+</body>
+
+</html>

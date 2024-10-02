@@ -1,17 +1,37 @@
-import { useState } from "react"
+
+import { useState , useEffect } from "react"
 import Admin_button from "../components/Admin_button";
 import "../UI_Design/admin.css"
+import axios from "axios";
+import { GetAdminRoute } from "../utility/APIRoute";
+
+ 
 
 
-export default function Admin(){
+export default function Admin({getWithExpiry , setWithExpiry}){
 
 
 
-let [errorMsg , setErrorMsg] = useState("")
-let [isAuthenticated , setIsAuthenticated] = useState(false);
+  let addToLocalStorage = false;
+  let [errorMsg , setErrorMsg] = useState("")
+  let [isAuthenticated , setIsAuthenticated] = useState(false);
 
-let Uname = "Sarthak";
-let Pass = "123123";
+
+
+
+  useEffect(() =>{
+
+    if(getWithExpiry('admin-login')){
+      setIsAuthenticated(true);
+    }
+  
+  },[] )
+
+
+
+
+
+
 
 let [values , setValues] = useState({
     username:"",
@@ -19,15 +39,29 @@ let [values , setValues] = useState({
 })
 
 
-let handleSubmit = (event) => {
-event.preventDefault();
+let handleSubmit = async(event) => {
+  event.preventDefault();
+  const { data } = await axios.get(GetAdminRoute);
+
+  let addToLocalStorage = false;
+
 let {username , password } = values;
- if(username != Uname || password != Pass){
+
+
+
+ if(username != data.result.AdminId || password != data.result.AdminPass){
     setErrorMsg("incorrect userID or password !");
  }
  else{
     setIsAuthenticated(true);
+    addToLocalStorage = true;
  }
+
+
+ if (addToLocalStorage) {
+  
+  setWithExpiry('admin-login', addToLocalStorage, 1800000);
+}
 
 }
 
@@ -64,7 +98,8 @@ return (
 
     {(() => {
       if (isAuthenticated) {
-        return   <Admin_button   /> 
+        return   <Admin_button /> 
+        
       } 
     
       else {

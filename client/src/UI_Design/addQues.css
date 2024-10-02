@@ -1,4 +1,50 @@
 
+
+
+
+.read-feedback-background{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+ 
+.read-feedback-shapes{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  border-radius: 50%;
+
+}
+.read-feedback-shape1{
+  /* opacity: 0.9; */
+  background: linear-gradient(
+      #fc5c3c,
+      #e99f37
+  );
+  left: -380px;
+  top: -40px;
+}
+.read-feedback-shape2{  
+  /* opacity: 0.87; */
+
+  background: linear-gradient(
+      to right,
+    
+      #3565d4,
+      #3a9fe2
+  );
+  right: -420px;
+  bottom: -10px;
+}
+
+
+
+
+
 .add-subject{
     height: 100px;
     width: 95%;
@@ -69,7 +115,7 @@
     }
 
   .add-question-box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 200px;
     position: absolute;
     top: 350px;
@@ -79,13 +125,12 @@
   }  
 
 
-.add-question-box input{
+.add-question-box textarea{
   height: 50px;
-  width: 70%;
+  width: 50%;
   background-color: rgba(255,255,255,0.07);
   border-radius: 3px;
   padding: 0 10px;
-  margin-top: 8px;
   font-size: 1.2rem;
   font-weight: 500;
   color: #363332;
@@ -100,7 +145,7 @@
 }
 
 .add-question-box button{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     width: 10%;
     height: 40px;
     background-color: #fa7541;
@@ -139,7 +184,7 @@
        border-radius: 15px;
        backdrop-filter: blur(10px);
        border: 2px solid rgba(255,255,255,0.1);
-       box-shadow: 0 0 40px rgba(8,7,16,0.6);
+       box-shadow: 0 0 10px rgba(8,7,16,0.6);
     
    
    }
@@ -149,20 +194,63 @@
     font-family: "Fredoka", sans-serif;
 
     height: 40px;
-     width: 12rem;
-     padding: 5px 5px 5px 8px;
-     font-size: 1.1rem;
+      width: 12rem;
+     /* padding: 5px 5px 5px 8px; */
+     font-size: 1.2rem;
      color: black;
      cursor: pointer;
-   font-size: 1.2rem;
-   font-weight: 600;
-     margin-right: 20px;
-    
-     background-color: rgba(255,255,255,0.13);
-       border-radius: 15px;
-       backdrop-filter: blur(10px);
-       border: 2px solid rgba(255,255,255,0.1);
-       box-shadow: 0 0 40px rgba(8,7,16,0.6);
+   font-weight: 500;
+   
+   backdrop-filter: blur(10px);
+  
+   /* box-shadow: 0 0 40px rgba(8,7,16,0.6);  */
+   
+  
     
    
+   }
+
+.addQues-checkbox-div{
+  display: flex;
+  justify-content: space-evenly;
+/* border: 1px solid red; */
+width: 15%;
+height: 30px;
+position: relative;
+top: 5px;
+left: -15px;
+}
+
+   .checkbox-btn{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #4CAF50;
+    margin-top: 5.5px;
+    position: relative;
+  left: -30px;
+   }
+   .CheckBox-p{
+    
+  position: relative;
+  left: -10px;
+font-size: 1.5rem;
+font-family: "Fredoka", sans-serif;
+
+   }
+
+   
+
+   .DB-Msg{
+    position: absolute;
+    top:525px;
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Fredoka", sans-serif; 
+    color: rgba(226, 10, 10, 0.959);
+
+    display: flex;
+    justify-content: center;
    }
