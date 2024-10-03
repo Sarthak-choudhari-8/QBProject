@@ -4,7 +4,9 @@
 
 
 import './App.css'
-import {BrowserRouter , Routes , Route} from "react-router-dom"
+// import {BrowserRouter , Routes , Route} from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Login from './pages/Login'
 // import Home from './pages/Home'
 import Home from "./pages/Home.jsx"
@@ -55,25 +57,22 @@ function App() {
   }
 
   return (
-    <>
-<BrowserRouter>
-<Routes>
+    <Router>
+      <Routes>
 
+        <Route path='/'  element={<Login />} />
 <Route path='/home'  element={<Home />  }/>
-
-<Route path='/'  element={<Login />} />
 <Route path='/feedback'  element={<Feedback />} />
 <Route path='/admin'  element={<Admin getWithExpiry={getWithExpiry} setWithExpiry={setWithExpiry} />} />
-
 <Route path='/DelQues'  element={<DelQues getWithExpiry={getWithExpiry}  />} />
 <Route path='/AddQues'  element={<AddQues  getWithExpiry={getWithExpiry} />} />
 <Route path='/feedbackDB'  element={<FeedbackDB  getWithExpiry={getWithExpiry} />} />
 <Route path='/about' element={< About/>} />
-</Routes>
 
-</BrowserRouter>
-
-    </>
+      </Routes>
+    </Router>
+   
+    
   )
 }
 
