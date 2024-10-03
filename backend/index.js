@@ -25,7 +25,7 @@ const wrapAsync = require("./utils/WrapAsync.js");
 
 
 let corsOption = {
-    origin: "https://question-bank-vnm.vercel.app/",
+    origin: "*",
     method: "GET,POST,DELETE,PUT,PATCH",
     credential: "true"
 }
