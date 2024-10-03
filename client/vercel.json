@@ -1,7 +1,22 @@
 {
     "rewrites" : [
-        { 
-            "source": "/(.*) " , "destination" : "/index.html"
-            }
+             { 
+            "source": "/ " , "destination" : "/index.html"
+            } ,
+            { 
+                "source": "/home " , "destination" : "/index.html"
+                } ,  { 
+                    "source": "/feedback " , "destination" : "/index.html"
+                    } ,  { 
+                        "source": "/about " , "destination" : "/index.html"
+                        } ,  { 
+                            "source": "/admin " , "destination" : "/index.html"
+                            } ,  { 
+                                "source": "/AddQues " , "destination" : "/index.html"
+                                } ,  { 
+                                    "source": "/DelQues " , "destination" : "/index.html"
+                                    } ,  { 
+                                        "source": "/feedbackDB " , "destination" : "/index.html"
+                                        } 
         ]
 }

@@ -21,8 +21,7 @@ const  NEP = require("./model/NEP.js");
 
 const ExpressError = require("./utils/ExpressError.js")
 const wrapAsync = require("./utils/WrapAsync.js");
-const { configDotenv } = require("dotenv");
-const { Db } = require('mongodb');
+
 
 
 let corsOption = {
