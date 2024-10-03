@@ -2,13 +2,17 @@
 
 import { useEffect, useState } from "react"
 import "../UI_Design/read_feedback.css"
-import { GetFeedbacksRoute } from "../utility/APIRoute";
+// import { GetFeedbacksRoute } from "../utility/APIRoute";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 
 
 export default function FeedbackDB({getWithExpiry}){
+
+  const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+  const GetFeedbacksRoute = `${host}/GetFeedbacks`;
+
 
 
   const Navigate = useNavigate();

@@ -5,9 +5,17 @@ import Select from "react-select"
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import { AddNewSubjectRoute, AddQuestionRoute, GetSubjectsRoute } from "../utility/APIRoute";
+// import { AddNewSubjectRoute, AddQuestionRoute, GetSubjectsRoute } from "../utility/APIRoute";
 
 export default function AddQues({getWithExpiry}) {
+
+    const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+
+const AddQuestionRoute= `${host}/AddQuestion`;
+const AddNewSubjectRoute = `${host}/AddSubject`;
+const GetSubjectsRoute = `${host}/getSubjects`;
+
+
 
     const Navigate = useNavigate();
 

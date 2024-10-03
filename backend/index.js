@@ -1,5 +1,6 @@
 // = ++ +
-require("dotenv").config();
+require('dotenv').config();  // Must be called at the very top
+
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -21,6 +22,7 @@ const  NEP = require("./model/NEP.js");
 const ExpressError = require("./utils/ExpressError.js")
 const wrapAsync = require("./utils/WrapAsync.js");
 const { configDotenv } = require("dotenv");
+const { Db } = require('mongodb');
 
 
 let corsOption = {
@@ -38,7 +40,6 @@ app.engine("ejs", ejsMate);
 
 
 const MongoURL = "mongodb://127.0.0.1:27017/QBProject";
-const DBURL = process.env.ATLAS_URL;
 
 main().then(() => {
     console.log("connected to DB");
@@ -48,7 +49,7 @@ main().then(() => {
     })
 
 async function main() {
-    await mongoose.connect(DBURL)
+await mongoose.connect(process.env.ATLAS_URL)
 }
 
 
@@ -252,9 +253,9 @@ app.get("*", (req, res, next) => {
     next(new ExpressError(404, "page not found "));
 })
 
-
+// process.env.ATLAS_URL
 app.listen(process.env.PORT, () => {
-    console.log("listening to port ");
+    console.log("listening to port 3000");
 })
 
 app.use((err, req, res, next) => {

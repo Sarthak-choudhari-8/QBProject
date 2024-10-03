@@ -3,12 +3,15 @@ import { useState , useEffect } from "react"
 import Admin_button from "../components/Admin_button";
 import "../UI_Design/admin.css"
 import axios from "axios";
-import { GetAdminRoute } from "../utility/APIRoute";
+// import { GetAdminRoute } from "../utility/APIRoute";
 
  
 
 
 export default function Admin({getWithExpiry , setWithExpiry}){
+
+  const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+  const GetAdminRoute = `${host}/getAdmin`;
 
 
 

@@ -4,14 +4,20 @@ import Select from "react-select";
 import { useState, useEffect } from "react";
 import QContainer from "../components/QContainer";
 import "../UI_Design/delQues.css"
-import { DeleteQuestionRoute, GetQuestionRoute } from "../utility/APIRoute";
+// import { DeleteQuestionRoute, GetQuestionRoute } from "../utility/APIRoute";
 import axios from "axios";
-import { GetSubjectsRoute } from "../utility/APIRoute";
+// import { GetSubjectsRoute } from "../utility/APIRoute";
 import { useNavigate } from "react-router-dom";
 
 
 
 export default function DelQues({getWithExpiry}) {
+    const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+    const DeleteQuestionRoute = `${host}/DelQuestion`;
+    const GetSubjectsRoute = `${host}/getSubjects`;
+    const GetQuestionRoute  = `${host}/GetQuestions`;
+
+
 
     const Navigate = useNavigate();
 

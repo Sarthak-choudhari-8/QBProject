@@ -1,12 +1,15 @@
 import { useState } from "react"
 import axios from 'axios'
-import { feedbackRoute } from "../utility/APIRoute"
+// import { feedbackRoute } from "../utility/APIRoute"
 
 import { useNavigate } from "react-router-dom";
 import "../UI_Design/feedback.css"
 
 
 export default function Feedback(){
+
+    const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+    const feedbackRoute = `${host}/feedback`;
 
 
     const Navigate = useNavigate();

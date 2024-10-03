@@ -3,19 +3,20 @@ import Select from "react-select";
 import { useState, useEffect } from "react";
 import QContainer from "../components/QContainer";
 import "../UI_Design/home.css"
-import { GetQuestionRoute } from "../utility/APIRoute";
+// import { GetQuestionRoute } from "../utility/APIRoute";
 import axios from "axios";
-import { GetSubjectsRoute } from "../utility/APIRoute";
+// import { GetSubjectsRoute } from "../utility/APIRoute";
 
 
 
 
+const Home = () => {
+    
+    const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
 
-
-
-
-export default function Home() {
-
+    const GetSubjectsRoute = `${host}/getSubjects`;
+    const GetQuestionRoute  = `${host}/GetQuestions`;
+   
 
     const [selectedOption, setSelectedOption] = useState(null);
 
@@ -240,3 +241,5 @@ export default function Home() {
     )
 
 }
+
+export default Home;
