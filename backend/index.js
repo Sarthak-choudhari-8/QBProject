@@ -26,7 +26,7 @@ const { Db } = require('mongodb');
 
 
 let corsOption = {
-    origin: "*",
+    origin: "https://question-bank-vnm.vercel.app/",
     method: "GET,POST,DELETE,PUT,PATCH",
     credential: "true"
 }
