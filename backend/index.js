@@ -61,7 +61,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/getAdmin",wrapAsync(async(req,res)=>{
-
+console.log("req on /getadmin");
 let result = await Admin.findOne({});
 
 
@@ -71,7 +71,8 @@ return res.json({result});
 }))
 
 app.post("/feedback",wrapAsync( async(req, res) => {
-    
+    console.log("req on /feedback");
+
         let { Name, email_phone, message } = req.body;
 
         let message1 = new Feedback({
@@ -89,7 +90,8 @@ app.post("/feedback",wrapAsync( async(req, res) => {
 }))
 
 app.post("/GetQuestions",wrapAsync( async (req, res) => {
-    
+    console.log("req on /GetQuestions");
+
         let {  curriculum, course, year, semester,  subject, mark    } = req.body;
         
         if (curriculum == "CBCS") {
@@ -165,6 +167,8 @@ app.post("/GetQuestions",wrapAsync( async (req, res) => {
 }))
 
 app.get("/getSubjects", wrapAsync( async(req,res)=>{
+    console.log("req on /getSubjects");
+
     let data = await  Subject.find({});
     
     return res.json({data});
@@ -172,6 +176,7 @@ app.get("/getSubjects", wrapAsync( async(req,res)=>{
 }))
 
 app.post("/AddQuestion", wrapAsync( async(req,res)=>{
+    console.log("req on /AddQuestion");
 
     let {curriculum,course ,year , semester ,question , subject ,mark, imp} = req.body;
     
@@ -209,6 +214,7 @@ else if(curriculum == "NEP"){
 }))
 
 app.post("/AddSubject",wrapAsync( async(req,res)=>{
+    console.log("req on /AddSubject");
 
 let subName = req.body.newSubject ;
 
@@ -221,6 +227,7 @@ return res.json({status:true})
 }))
 
 app.get("/GetFeedbacks", wrapAsync( async(req,res)=>{
+    console.log("req on /GetFeedbacks");
 
 let Data = await Feedback.find({});
 // console.log(Data);
@@ -249,7 +256,7 @@ return res.json({status:true});
 
 app.get("*", (req, res, next) => {
 
-    next(new ExpressError(404, "page not found "));
+    next(new ExpressError(404, "PAGE not found "));
 })
 
 // process.env.ATLAS_URL

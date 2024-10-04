@@ -13,6 +13,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function DelQues({getWithExpiry}) {
     const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+    // const host = `${window.location.origin}`
+
     const DeleteQuestionRoute = `${host}/DelQuestion`;
     const GetSubjectsRoute = `${host}/getSubjects`;
     const GetQuestionRoute  = `${host}/GetQuestions`;

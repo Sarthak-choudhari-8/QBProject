@@ -13,6 +13,8 @@ import axios from "axios";
 const Home = () => {
     
     const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+    // const host = `${window.location.origin}`
+
 
     const GetSubjectsRoute = `${host}/getSubjects`;
     const GetQuestionRoute  = `${host}/GetQuestions`;

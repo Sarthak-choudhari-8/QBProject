@@ -9,8 +9,7 @@ export default function Login(){
 
 
 let Navigate = useNavigate();
-let Uname = "VNM";
-let Pass = "123123";
+
 
 let [values , setValues] = useState({
     username:"",
@@ -20,7 +19,6 @@ let [values , setValues] = useState({
 
 let handleSubmit = (event) => {
 event.preventDefault();
-let {username , password } = values;
 
  
 Navigate("/home");

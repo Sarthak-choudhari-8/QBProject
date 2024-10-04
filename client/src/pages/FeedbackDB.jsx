@@ -11,6 +11,8 @@ import { useNavigate } from "react-router-dom";
 export default function FeedbackDB({getWithExpiry}){
 
   const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
+  // const host = `${window.location.origin}`
+
   const GetFeedbacksRoute = `${host}/GetFeedbacks`;
 
 
