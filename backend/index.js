@@ -70,7 +70,7 @@ return res.json({result});
 
 }))
 
-app.post("/feedback",wrapAsync( async(req, res) => {
+app.post("/postFeedback",wrapAsync( async(req, res) => {
     console.log("req on /feedback");
 
         let { Name, email_phone, message } = req.body;

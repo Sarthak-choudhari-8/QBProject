@@ -11,7 +11,7 @@ export default function Feedback(){
     const host = `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}`;
     // const host = `${window.location.origin}`
 
-    const feedbackRoute = `${host}/feedback`;
+    const feedbackRoute = `${host}/postFeedback`;
 
 
     const Navigate = useNavigate();
