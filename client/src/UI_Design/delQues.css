@@ -1,4 +1,11 @@
 
+
+
+
+.DS-site-warn{
+  visibility: hidden;
+}
+
 .read-feedback-background{
     width: 430px;
     height: 520px;
@@ -86,3 +93,50 @@ margin-top: 7px;
     position: relative;
     top: -125px;
 }
+
+@media (max-width :466px) {
+  *{
+    visibility: hidden;
+  }
+  
+        .DS-site-warn{
+          visibility: visible !important;
+          display:flex  !important; 
+          justify-content: center  !important;
+          align-items: center  !important;
+          border: 2px solid black  !important;
+        height: 100px !important;
+        width: 90% !important;
+        position: absolute;
+        right: -25px;
+        top: 300px;
+        font-size: 2rem ;
+        font-family: "Fredoka", sans-serif;
+        
+        }
+  
+    }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+  .DS-site-warn{
+    visibility: hidden;
+  }
+  
+ 
+     
+  
+  
+ 
+  
+#select-select-input::placeholder {
+  font-size: 1.3rem !important;  
+
+  font-weight: 500;   
+}
+
+}
+    
+    

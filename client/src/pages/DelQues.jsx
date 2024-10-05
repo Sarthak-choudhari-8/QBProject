@@ -149,6 +149,9 @@ handleSubmit(event);
     return (
 
         <>
+            <div className="DS-site-warn"> Switch To Desktop Site</div>
+
+
             <div className="read-feedback-background" id="home-background">
 
 <div className="read-feedback-shape1 read-feedback-shapes"></div>
@@ -215,7 +218,7 @@ handleSubmit(event);
                     required
                 />
 
-                    <input className="select-select" value={selctedValues.topic} placeholder=" Include Keyword " name="topic" onChange={(event) => {
+                    <input className="select-select" id="select-select-input" value={selctedValues.topic} placeholder=" Include Keyword " name="topic" onChange={(event) => {
                         handleChange(event);
                     }} />
 

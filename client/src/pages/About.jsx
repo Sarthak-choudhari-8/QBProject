@@ -6,11 +6,12 @@ export default function About() {
     return (
 
         <>
+            <div className="DS-site-warn"> Switch To Desktop Site</div>
 
 
             <div className="Navbar sticky">
                 <div className="nav-logo"></div>
-                <div className="nav-heading">Question Bank <div className="nav-heading-logo"></div></div>
+                <div className="nav-heading about-nav-heading">Question Bank <div className="nav-heading-logo"></div></div>
                 <div className="nav-links">
                     <a href="/home#home-background">Home</a>
                     <a href="/Admin">Admin</a>

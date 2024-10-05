@@ -179,3 +179,100 @@ left: 80px;
     
       }
     
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+
+        .DS-site-warn{
+            visibility: hidden;
+          }
+        
+        #login-shape-bg{
+            width: 430px;
+            height: 520px;
+           
+        }
+        #login-shape1 , #login-shape2{
+            height: 350px;
+            width: 350px;
+        }
+        #login-shape1{
+          
+            left: -300px;
+            top: -350px;
+        }
+        #login-shape2{
+           
+            right: -300px;
+            bottom: -320px;
+        }
+        
+        
+
+        .feedback-form{
+            height: 1000px ;
+            width: 700px ;
+
+          
+            transform: translate(-50%, -50%);
+            backdrop-filter: none;        
+        }
+      
+        .feedback-form h3{
+            font-size: 4rem;
+            line-height: 70px;
+ 
+        }
+        
+        .feedback-label{
+            margin-top: 50px !important;
+            font-size: 2rem !important;
+            font-weight: 500;
+            color: #363332;
+            position: relative;
+            top: 50px;
+        
+        }
+        .feedback-input{
+            height: 100px;
+   
+            margin-bottom: 50px;
+            font-size: 2rem !important;
+            font-weight: 400 !important;
+            position: relative;
+            top: 50px;
+        
+        }
+        ::placeholder{
+            color: #363332;
+            font-size: 32.5px !important;
+
+        }
+        
+        .feedback-textarea{
+            font-size: 1.1rem !important;
+            width: 100%;
+           
+            height: 200px;
+   
+            margin-bottom: 20px;
+            font-size: 2rem !important;
+            font-weight: 400 !important;
+
+            position: relative;
+            top: 90px;
+        }
+        
+        
+        
+        .feedback-button{
+            width: 90%;
+            font-size: 50px;
+            margin-left: 30px;
+            border-radius: 15px;
+            position: relative;
+            top: 50px;
+        }
+        
+         
+
+      }

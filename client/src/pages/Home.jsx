@@ -125,6 +125,8 @@ const Home = () => {
 
         <>
             <div className="DS-site-warn"> Switch To Desktop Site</div>
+
+            
             <div className="home-background" id="home-background">
                 <div className="home-shape1 home-shapes"></div>
                 <div className="home-shape2 home-shapes"></div>
@@ -139,6 +141,7 @@ const Home = () => {
                     <a href="/Admin">Admin</a>
                     <a href="/feedback">Feedback</a>
                     <a href="/about"> About Us</a>
+
                 </div>
             </div>
 
@@ -202,7 +205,7 @@ const Home = () => {
                         required
                     />
 
-                    <input className="select-select" value={selctedValues.topic} placeholder=" Include Keyword " name="topic" onChange={(event) => {
+                    <input className="select-select" id="select-select-input" value={selctedValues.topic} placeholder=" Include Keyword " name="topic" onChange={(event) => {
                         handleChange(event);
                     }} />
 

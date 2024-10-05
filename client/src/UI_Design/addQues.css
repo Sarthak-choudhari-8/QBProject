@@ -1,6 +1,8 @@
 
 
-
+.DS-site-warn{
+  visibility: hidden;
+}
 
 .read-feedback-background{
   width: 430px;
@@ -254,3 +256,160 @@ font-family: "Fredoka", sans-serif;
     display: flex;
     justify-content: center;
    }
+
+   @media (max-width :466px) {
+    *{
+      visibility: hidden;
+    }
+    
+          .DS-site-warn{
+            visibility: visible !important;
+            display:flex  !important; 
+            justify-content: center  !important;
+            align-items: center  !important;
+            border: 2px solid black  !important;
+          height: 100px !important;
+          width: 90% !important;
+          position: absolute;
+          right: -25px;
+          top: 300px;
+          font-size: 2rem ;
+          font-family: "Fredoka", sans-serif;
+          
+          }
+    
+      }
+
+      
+      @media (min-width: 768px) and (max-width: 1024px) {
+        
+
+
+
+
+.add-subject{
+   
+   
+
+    top: 250px;
+    
+
+
+    backdrop-filter: none;
+
+}
+.add-subject p{
+    font-size: 2rem;
+
+}
+
+.add-subject input{
+    
+    width: 35%;
+   
+    /* margin-top: 8px; */
+    font-size: 1.75rem;
+   
+   
+}
+::placeholder{
+    color: #363332;
+    font-size: 1.75rem;
+}
+
+.add-subject button{
+        width: 12.5%;
+
+    }
+   
+
+
+
+
+  .add-question-box{
+    /* border: 2px solid red; */
+    height: 350px;
+    top: 450px;
+    backdrop-filter: none;
+
+  }  
+
+
+.add-question-box textarea{
+  width: 70%;
+
+  
+  font-size: 1.75rem;
+  
+
+}
+::placeholder{
+  color: #363332;
+  font-size: 1.2rem;
+
+}
+
+.add-question-box button{
+    /* margin-top: 15px; */
+    width: 30%;
+    height: 50px;
+   
+    font-size: 30px;
+}
+
+ 
+   .addQues-select-select{
+       backdrop-filter: none;
+   
+   }
+
+   .addQues-select-select-subject{
+
+   backdrop-filter: none;
+   height: 50px;
+
+
+   }
+
+.addQues-checkbox-div{
+
+/* border: 1px solid red; */
+width: 25%;
+height: 30px;
+position: relative;
+bottom: 15px;
+}
+
+   .checkbox-btn{
+    width: 30px;
+    height: 30px;
+    
+    margin-top: 5.5px;
+    position: relative;
+  left: -30px;
+   }
+   .CheckBox-p{
+    
+  position: relative;
+  left: -10px;
+font-size: 2rem;
+font-family: "Fredoka", sans-serif;
+
+   }
+
+   
+
+   .DB-Msg{
+    position: absolute;
+    top:775px;
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: "Fredoka", sans-serif; 
+    color: rgba(226, 10, 10, 0.959);
+
+    display: flex;
+    justify-content: center;
+   }
+      }

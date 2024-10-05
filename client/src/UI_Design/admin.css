@@ -97,7 +97,7 @@ body{
 color: #080710;
 }
 
-.form-label{
+#admin-form-label{
     display: block;
     margin-top: 30px;
     font-size: 1.2rem;
@@ -253,3 +253,126 @@ background-color: #ff512f ;
     
       }
     
+
+
+      @media (min-width: 768px) and (max-width: 1024px){
+
+
+        .DS-site-warn{
+            visibility: hidden;
+          }
+
+        .background{
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+        }
+        .background .shape{
+            height: 250px;
+            width: 250px;
+           
+        }
+
+        .shape:first-child{
+          
+            left: -350px;
+            top: -390px;
+        }
+        .shape:last-child{
+          
+            right: -350px;
+            bottom: 320px;
+        }
+
+        .admin-form{
+          
+            top: 300px;
+            border-radius: 15px;
+            backdrop-filter: none;   
+        }
+       
+
+        .admin-form h3{
+            font-size: 55px;
+           
+        }
+        
+        #admin-form-label{
+            display: block;
+           visibility: hidden;
+        }
+        
+       
+      
+        
+        
+        .admin-input{
+           
+            font-size: 1.75rem;
+            font-weight: 400;
+           
+        }
+        ::placeholder{
+            color: #363332;
+            font-size: 1.75rem;
+        }
+        
+        .admin-button{
+            margin-top: 100px;
+            margin-left: 20px;
+            width: 15%;
+            height: 40px;
+     
+            font-size: 25px;
+          
+        }
+        
+         
+           /* #f7d045 yell ,  #fa7541 orange  , #5a72fa blue */
+        
+        
+           .admin-heading-Msg{
+            position: absolute;
+            top:370px;
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            /* font-weight: 600; */
+            font-family: "Fredoka", sans-serif; 
+            color: rgba(245, 67, 23, 0.911);
+        }
+        
+        
+        
+        .admin-container{
+       
+        
+            position: absolute;
+            margin-left: 8%;
+            top: 500px;
+            width: 85%;
+            height: 100px;
+           
+            
+        backdrop-filter: none;
+      
+        
+        }
+        
+        
+        
+        .admin-container button{
+        
+            width: 30%;
+        
+        }
+        
+   
+
+      }

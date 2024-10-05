@@ -54,13 +54,13 @@ export default function Feedback(){
     
     <div className="DS-site-warn"> Switch To Desktop Site</div>
 
-    <div class="shape-background">
-        <div class="shapes shape1"></div>
-        <div class="shapes shape2"></div>
+    <div className="shape-background" id="login-shape-bg">
+        <div className="shapes shape1" id="login-shape1"></div>
+        <div className="shapes shape2" id="login-shape2"></div>
     </div>
 
 
-<form onSubmit={(e)=> handleSubmit(e)}  className="feedback-form">
+<form onSubmit={(e)=> handleSubmit(e)}  className="feedback-form" >
 <h3>[  Feedback Form  ]</h3>
 
 

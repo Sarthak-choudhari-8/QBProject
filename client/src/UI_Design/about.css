@@ -5,6 +5,7 @@
 .DS-site-warn{
     visibility: hidden;
   }
+  
 .container{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -33,7 +34,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: none;
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 10px rgba(8,7,16,0.6);
 
@@ -45,9 +46,9 @@
 
 .box:hover{
     
-    backdrop-filter: blur(10px);
-    border: 3px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 50px rgba(8, 7, 16, 0.89);
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+
     
    
 }
@@ -175,7 +176,120 @@ font-size: 1.5rem;
     /* border: 1px solid black; */
 }
 
+@media (max-width :466px) {
+    *{
+      visibility: hidden;
+    }
+    
+          .DS-site-warn{
+            visibility: visible !important;
+            display:flex  !important; 
+            justify-content: center  !important;
+            align-items: center  !important;
+            border: 2px solid black  !important;
+          height: 100px !important;
+          width: 90% !important;
+          position: absolute;
+          right: -25px;
+          top: 300px;
+          font-size: 2rem ;
+          font-family: "Fredoka", sans-serif;
+          
+          }
+    
+      }
 
+      /*  */
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+          
+       .about-nav-heading{
+width: 47% !important;
+        }
+
+
+
+
+
+.about-heading{
+position: relative;
+top:25px; 
+}
+
+.box{
+    margin-left: 10%;
+    margin-top: 50px;
+    height: 275px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: none;
+  
+
+    
+}
+
+
+
+
+.box1{
+    /* border: 1px solid black; */
+    
+    width: 35%;
+  
+    /* border: 1px solid red; */
+}
+
+.box1-photo {
+ 
+   
+   width: 85%;
+   
+}
+
+
+ .box2-text h2{
+    font-size: 2rem;
+    
+ }
+.box2-text p{
+   
+font-size: 1.25rem;
+}
+
+
+ .box2-text{
+
+    /* border: 1px solid black; */
+    width: 80%;
+
+ }
+.box2-social {
+    width: 35%;
+    height: 20%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+} 
+
+.img1 {
+    
+    height: 45px;
+    width: 45px;
+    /* border: 1px solid black; */
+}
+
+.img2{
+    height: 45px;
+    width: 45px;
+   
+}
+
+
+      }
 
 
 

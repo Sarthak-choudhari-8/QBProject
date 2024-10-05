@@ -131,6 +131,8 @@ const GetSubjectsRoute = `${host}/getSubjects`;
     return (
 
         <>
+                    <div className="DS-site-warn"> Switch To Desktop Site</div>
+
 
 <div className="read-feedback-background" id="home-background">
 

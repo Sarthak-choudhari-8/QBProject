@@ -1,5 +1,9 @@
 
 
+.DS-site-warn{
+  visibility: hidden;
+}
+
 .read-feedback-background{
     width: 430px;
     height: 520px;
@@ -84,4 +88,53 @@ flex-wrap: wrap;
     height: auto;
 
 }
+
+@media (max-width :466px) {
+  *{
+    visibility: hidden;
+  }
+  
+        .DS-site-warn{
+          visibility: visible !important;
+          display:flex  !important; 
+          justify-content: center  !important;
+          align-items: center  !important;
+          border: 2px solid black  !important;
+    
+        width: 90% !important;
+        position: absolute;
+     
+        right: 25px;
+        height: 70px !important;
+
+        top: 300px;
+        font-size: 2rem ;
+          font-family: "Fredoka", sans-serif;
+        ;
+        }
+  
+    }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .DS-site-warn{
+    visibility: hidden;
+  }
+  
+  
+ 
+  
+     /* read_feedback css is here  */
+     .read-feedback-div{
+      margin-top: 30px;
+      margin-left: 15px;
+  z-index: 100;
+      backdrop-filter: none;
+      
+  
+  }
+
+}
+
 

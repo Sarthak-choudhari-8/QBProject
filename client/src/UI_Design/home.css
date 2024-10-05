@@ -8,7 +8,6 @@
     scroll-behavior: smooth;
     /* overflow-x: hidden; */
 
-
 }
 
 
@@ -464,8 +463,179 @@ cursor: pointer;
   /*  */
 
   @media (min-width: 768px) and (max-width: 1024px) {
+    .DS-site-warn{
+      visibility: hidden;
+    }
+
+    .Navbar{
+      margin-top: 100px;
+  
+    }
+    
+   
+    
+    .nav-logo{
+      
+    height: 100%;
+    width: 8%;
+    
+    
+    }
+    .nav-heading{
+        height: 100%;
+        width: 45%;
+       
+    
+    
+    }
+    .nav-heading-logo{
+     
+      width: 19%;
+    
+    }
+    
+  
+  
+    .home-background{
+      width: 430px;
+      height: 520px;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+    }
+     
+    .home-background .home-shapes{
+      height: 200px;
+      width: 200px;
+
+    
+    }
+    .home-shape1{
+    
+      left: -280px;
+      top: -250px;
+    }
+    .home-shape2{  
+  
+      right: -220px;
+      bottom: 610px;
+    }
+    
+    
+    
+    .SearchForm{
+       margin-top: 180px;
+        height: 225px;
+        margin-left: 45px;
+        width: 95%;
+    
+    }
+    
+    
+    
+    
+    .select-select {
+      font-family: "Fredoka", sans-serif;
+    
+     height: 40px;
+      width: 19%;
+        backdrop-filter: none;
+    
+     z-index: 100;
+    
+     
+    }
+   
+    #select-select-input::placeholder {
+      font-size: 1.3rem !important;  
+    
+      font-weight: 500;   
+  }
 
 
+    .select-option {
+
+      border-radius: 15px;
+      backdrop-filter: none;
+      
+    
+    }
+    
+    
+    .select-select-subject{
+       
+        width: 20%;
+     backdrop-filter: none;
+     }
+    
+    
+    
+    #mark{
+      position: relative;
+      right: 35px;
+    }
+    
+    .search-form-button{
+     height: 40px;
+     right: 40px;
+      font-size: 20px;
+    }
+    
+    
+     /*  */
+   
+    
+    .question-single{
+   
+    /* border: 1px solid black; */
+    margin-bottom: 25px;
+   
+    }
+    
+    
+
+    
+    .question-imp{
+    font-weight: 400;
+        margin-right: 5px;
+    }
+   
+    
+   
+    
+    
+    /*  */
+    .heading-single{
+       
+        margin-bottom: 30px;
+        
+        }
+      
+    
+    
+    .heading-Msg i{
+      
+    
+      font-size: 2rem;
+      
+    
+    }
+    
+    .delQues-btn{
+     
+      background-color: transparent;
+      border: none;
+     height: 30px;
+    font-size: 1.6rem;
+      
+    color: rgb(252, 3, 3);
+    
+    cursor: pointer;
+position: relative;
+      left: -10px;
+    }
+    
 
 
   }

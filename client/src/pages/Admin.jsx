@@ -89,13 +89,13 @@ return (
 <form onSubmit={(event) => handleSubmit(event)} className="admin-form">
       <div className="admin-form-heading">  <h3> Admin Login </h3></div>
 <div className="admin-inp1">
-        <label htmlFor="username" className="form-label">Enter Admin UserID</label>
-        <input className="admin-input" type="text" placeholder="Enter Username" id="username" name="username" onChange={(e) =>handleChange(e) } required />
+        <label htmlFor="username"  id="admin-form-label">Enter Admin UserID</label>
+        <input className="admin-input" type="text" placeholder="Enter Admin ID" id="username" name="username" onChange={(e) =>handleChange(e) } required />
         </div>
 
 <div className="admin-inp2">
-        <label htmlFor="password" className="form-label" >Enter Admin Password</label>
-        <input className="admin-input" type="password" placeholder="Password" id="password"  name="password" onChange={(e) =>handleChange(e) } required />
+        <label htmlFor="password"  id="admin-form-label" >Enter Admin Password</label>
+        <input className="admin-input" type="password" placeholder="Admin Password" id="password"  name="password" onChange={(e) =>handleChange(e) } required />
  </div>
         <button className="admin-button" type="submit" >Submit</button>
        
