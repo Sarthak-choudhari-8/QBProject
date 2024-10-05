@@ -147,7 +147,7 @@ const GetSubjectsRoute = `${host}/getSubjects`;
                     <a href="/home#home-background">Home</a>
                     <a href="/Admin">Admin</a>
                     <a href="/feedback">Feedback</a>
-                    <a href="#"> About Us</a>
+                    <a href="/about"> About Us</a>
                 </div>
 
 
