@@ -173,6 +173,10 @@ const Home = () => {
                         <option className="select-option" value="2324">2023-24</option>
                         <option className="select-option" value="2425">2024-25</option>
                         <option className="select-option" value="2526">2025-26</option>
+                        <option className="select-option" value="2627">2026-27</option>
+                        <option className="select-option" value="2728">2027-28</option>
+                        <option className="select-option" value="2829">2028-29</option>
+
 
                     </select>
 
