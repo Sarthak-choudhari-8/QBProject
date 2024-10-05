@@ -244,8 +244,8 @@ backdrop-filter: none;
         
            .git-link-box{
                 position: absolute;
-                top: 85%;
-                left: 15%;
+                top: 75%;
+                left: 12.5%;
                  p {
         font-size: 2rem;
         }
