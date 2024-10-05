@@ -25,7 +25,7 @@ const wrapAsync = require("./utils/WrapAsync.js");
 
 
 let corsOption = {
-    origin: "*",
+    origin: ["https://qb-project-vnm.vercel.app"],
     method: "GET,POST,DELETE,PUT,PATCH",
     credential: "true"
 }
