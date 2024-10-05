@@ -355,14 +355,15 @@ margin-left:40px;
        
         
             position: absolute;
-            margin-left: 8%;
+            margin-left: 10%;
             top: 500px;
             width: 85%;
             height: 100px;
            
             
         backdrop-filter: none;
-      margin-right: 20px;
+     
+
         
         }
         
