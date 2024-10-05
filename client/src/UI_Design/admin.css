@@ -279,12 +279,12 @@ background-color: #ff512f ;
         .shape:first-child{
           
             left: -350px;
-            top: -390px;
+            top: -590px;
         }
         .shape:last-child{
           
             right: -350px;
-            bottom: 320px;
+            bottom: 620px;
         }
 
         .admin-form{
