@@ -111,13 +111,13 @@ color: #080710;
     width: 100%;
 }
 .admin-inp1{
-    border: 2px solid red;
+/*     border: 2px solid red; */
     width: 40%;
 }
 
 .admin-inp2{
     width: 40%;
-    border: 2px solid black;
+/*     border: 2px solid black; */
 }
 
 
@@ -302,12 +302,13 @@ margin-left:40px;
         }
         
         #admin-form-label{
-            display: block;
 /*            visibility: hidden; */
 
              display: block;
-    margin-top: 30px;
-    font-size: 1.2rem;
+/*     margin-top: 30px; */
+          position:relative;
+          top:35px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #363332;
         }
@@ -330,13 +331,13 @@ margin-left:40px;
         
         .admin-input{
            height: 75px;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 300;
            
         }
         ::placeholder{
             color: #363332;
-            font-size: 1.25rem;
+            font-size: 0rem;
         }
         
         .admin-button{
