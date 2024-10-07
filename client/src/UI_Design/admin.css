@@ -111,13 +111,13 @@ color: #080710;
     width: 100%;
 }
 .admin-inp1{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     width: 40%;
 }
 
 .admin-inp2{
     width: 40%;
-    /* border: 2px solid black; */
+    border: 2px solid black;
 }
 
 
@@ -303,17 +303,35 @@ margin-left:40px;
         
         #admin-form-label{
             display: block;
-           visibility: hidden;
+/*            visibility: hidden; */
+
+             display: block;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #363332;
         }
         
-    
+/*         font-size: 1.1rem;
+
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    /* font-size: 14px; 
+    font-weight: 300;
+    color: #363332;
+    border-bottom: 1px solid black; */
       
         
         
         .admin-input{
            height: 75px;
             font-size: 1.5rem;
-            font-weight: 400;
+            font-weight: 300;
            
         }
         ::placeholder{
