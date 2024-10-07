@@ -90,8 +90,8 @@ return (
       <div className="admin-form-heading">  <h3> Admin Login </h3></div>
 <div className="admin-inp1">
         <label htmlFor="username"  id="admin-form-label">Enter Admin UserID</label>
-        <input className="admin-input" type="text" placeholder="Enter Admin ID" id="username" name="username" onChange={(e) =>handleChange(e) } required />
-        </div>
+        <input className="admin-input" type="text" placeholder="Admin ID"  name="username" id="username" onChange={(e) =>handleChange(e) } required />
+</div>
 
 <div className="admin-inp2">
         <label htmlFor="password"  id="admin-form-label" >Enter Admin Password</label>
