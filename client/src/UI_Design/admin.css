@@ -308,7 +308,8 @@ margin-left:40px;
 /*     margin-top: 30px; */
           position:relative;
           top:35px;
-    font-size: 1.5rem;
+          left:5px;
+    font-size: 1.75rem;
     font-weight: 500;
     color: #363332;
         }
@@ -338,7 +339,7 @@ margin-left:40px;
         ::placeholder{
             color: #363332;
             font-size: 0rem;
-        }
+visibility: hidden;         }
         
         .admin-button{
             margin-top: 65px;
