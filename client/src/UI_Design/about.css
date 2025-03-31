@@ -79,14 +79,14 @@
 
 
 .s-photo{
-    background-image: url(../assets/sarthak.jpg);
+/*     background-image: url(../assets/sarthak.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .p-photo{
-    background-image: url(../assets/pramod.jpg);
+/*     background-image: url(../assets/pramod.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -94,7 +94,7 @@
 }
 
 .t-photo{
-    background-image: url(../assets/tamas.jpg);
+/*     background-image: url(../assets/tamas.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -102,7 +102,7 @@
 }
 
 .y-photo{
-    background-image: url(../assets/yash.jpg);
+/*     background-image: url(../assets/yash.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
