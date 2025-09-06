@@ -24,11 +24,11 @@ const wrapAsync = require("./utils/WrapAsync.js");
 
 
 
-let corsOption = {
-    origin: ["https://qb-project-vnm.vercel.app"],
-    method: "GET,POST,DELETE,PUT,PATCH",
-    credential: "true"
-}
+llet corsOptions = {
+  origin: ["https://qb-project-vnm.vercel.app"],
+  methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
+  credentials: true
+};
 
 app.use(express.json());
 app.use(cors(corsOption));
