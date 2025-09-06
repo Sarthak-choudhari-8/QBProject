@@ -31,7 +31,7 @@ llet corsOptions = {
 };
 
 app.use(express.json());
-app.use(cors(corsOption));
+app.use(cors(corsOptions));
 app.set("view engine ", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.engine("ejs", ejsMate);
